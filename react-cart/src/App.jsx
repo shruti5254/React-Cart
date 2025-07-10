@@ -8,6 +8,7 @@ import MyOrders from './pages/MyOrders';
 import Cart from './pages/cart';
 import './App.css';
 import Header from './layouts/Header';
+import Footer from './layouts/Footer';
 import { useContext } from 'react';
 import {AppContext} from './context/AppContext';
 
@@ -23,13 +24,14 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/products/:id" element={<Products />} />
+            <Route path="/products" element={<Products />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/my-orders" element={<MyOrders />} />
+            
           </Routes>
       </div>
-      
+      <Footer/>
 
     </>
   )

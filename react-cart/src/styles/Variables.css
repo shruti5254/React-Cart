@@ -10,7 +10,7 @@
     --backgroundbkp: #fefce8;
     --text: #111827;
     --textbkp: #14532d;
-    --red : #DB4444;
+   /*  --red : #DB4444; */
     --para: #184A48;
 }
 
@@ -40,4 +40,7 @@
 }
 .bg-customblack{
     background-color: var(--text);
+}
+.bg-customred{
+    background-color: var(--color-accentbkp);
 }

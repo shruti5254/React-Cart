@@ -5,6 +5,7 @@ import { CiTrash } from "react-icons/ci";
 
 const Cards = ({
   title,
+  childTitle,
  /*  description, */
   image,
   children,
@@ -12,6 +13,7 @@ const Cards = ({
   className = "",
   contentPosition = "bottom",
   hoverActionLink,
+  showHeart = false,
   showTrash = false,
   showEye = false,
   priceNew,
@@ -35,9 +37,12 @@ const Cards = ({
                 className="w-full h-50 object-contain "
             />
             <div className="icons-tr absolute top-2 right-2 flex flex-col gap-3 z-10">
-                <span className="w-[25px] h-[25px] rounded-full bg-white flex items-center justify-center">
-                <CiHeart className="color-accentbkp"size="1.5em" />
-                </span>
+                {showHeart && (
+                    <span className="w-[25px] h-[25px] rounded-full bg-white flex items-center justify-center">
+                        <CiHeart className="color-accentbkp"size="1.5em" />
+                    </span>
+                )}
+                
                 {showTrash && (
                 <span className="w-[25px] h-[25px] rounded-full bg-white flex items-center justify-center">
                     <CiTrash className="color-accentbkp" size="1.5em" />
@@ -84,8 +89,13 @@ const Cards = ({
        
         {/* Children area — user can add button, icons, etc. */}
         {children && (
-            <div className={contentPosition === "bottom" ? "mt-auto" : ""}>
-            {children}
+            <div className={contentPosition === "top" ? "px-2 py-2 w-full h-max": contentPosition === "bottom" ? "mt-auto" : ""}>
+                <div className="flex flex-col gap-2 justify-center items-center">
+                    <div className="w-full h-[75px]">{children}</div>
+                    <div className="title_medium mb-1">{childTitle}</div>   
+                </div>
+                    
+               
             </div>
         )}
     </div>
