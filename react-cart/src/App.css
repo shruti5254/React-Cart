@@ -1,0 +1,10 @@
+/* google font 'Inter' */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@import "tailwindcss";
+@import "./styles/Base.css";
+@import "./styles/Utilities.css";
+@import "./styles/Variables.css";
+@import "./styles/Mixins.css";
+
+

@@ -1,0 +1,60 @@
+@layer utilities {
+  .custom-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: theme("padding.6");
+    padding-right: theme("padding.6");
+  }
+
+  @media (min-width: theme("screens.sm")) {
+    .custom-container {
+      max-width: 640px;
+    }
+  }
+
+  @media (min-width: theme("screens.md")) {
+    .custom-container {
+      max-width: 768px;
+     
+    }
+  }
+
+  @media (min-width: theme("screens.lg")) {
+    .custom-container {
+      max-width: 1024px;
+      
+    }
+  }
+
+  @media (min-width: theme("screens.xl")) {
+    .custom-container {
+      max-width: 1280px;
+    }
+  }
+
+  @media (min-width: theme("screens.2xl")) {
+    .custom-container {
+      max-width: 1440px;
+    }
+  }
+}
+
+.title_medium{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0.2px;
+  color: inherit;
+  text-transform: capitalize;
+}
+.title_accent-small{
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  /* color: var(--accent); */
+}
+
+.para{
+  color: var(--para);
+}

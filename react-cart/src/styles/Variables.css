@@ -1,0 +1,43 @@
+/* custom colors */
+:root{
+    --color-primary: #2563eb;
+    /* --color-primarybkp: #1f2937; */
+    --color-primarybkp: #15803d;
+    --color-accent: #facc15;
+    /* --color-accentbkp: #d97706; */
+    --color-accentbkp: #DB4444;
+    --background: #f9fafb;
+    --backgroundbkp: #fefce8;
+    --text: #111827;
+    --textbkp: #14532d;
+    --red : #DB4444;
+    --para: #184A48;
+}
+
+.color-primary{
+    color:var(--color-primary);
+} 
+.color-primarybkp{
+    color:var(--color-primarybkp);
+} 
+.color-accent{
+    color:var(--color-accent);
+} 
+.color-accentbkp{
+    color:var(--color-accentbkp);
+} 
+.color-bg{
+    background-color: var(--background);
+}
+.color-bgbkp{
+    background-color: var(--backgroundbkp);
+}
+.color-text{
+    color: var(--text);
+}
+.color-textbkp{
+    color: var(--textbkp);
+}
+.bg-customblack{
+    background-color: var(--text);
+}
