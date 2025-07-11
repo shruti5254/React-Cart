@@ -23,7 +23,7 @@ a {
   font-weight: 500;
   font-size: 14px;
   color: var(--color-background);
-  text-decoration: underline;
+  /* text-decoration: none; */
 }
 a:hover {
   color: var(--color-primary);
@@ -42,7 +42,7 @@ body {
   --webkit-scroll: smooth;
 }
 h1,h2,h3,h4,h5,h6{
-  line-height: 1.1;
+  line-height: 1.125;
   font-weight: 600;
 }
 
