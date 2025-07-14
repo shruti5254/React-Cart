@@ -4,6 +4,8 @@ import Category from "../components/Category";
 import BestSelling from "../components/BestSelling";
 import Ads from "../components/Ads";
 import OurProducts from "../components/OurProducts";
+import Newarrival from "../components/Newarrival";
+import Services from "../components/Services";
 const Home = () => {
     return (
         <>
@@ -13,6 +15,8 @@ const Home = () => {
           <BestSelling/>
           <Ads/>
           <OurProducts/>
+          <Newarrival/>
+          <Services/>
         </>
     )
 

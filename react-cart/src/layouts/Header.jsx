@@ -28,7 +28,7 @@ const Header = () => {
             <div className="logo float-left">
               <Link to={"/"} className="!no-underline w-10 h-10">
                 <span className="text-3xl font-bold color-accentbkp">
-                  ProShop
+                  Logo
                 </span>
               </Link>
             </div>
@@ -39,9 +39,9 @@ const Header = () => {
                     Home
                   </Link>
                 </li>
-                <li className="list-none px-3 py-2">
+                {/* <li className="list-none px-3 py-2">
                   <Link to={"/products"}>Products</Link>
-                </li>
+                </li> */}
                 <li className="list-none px-3 py-2">
                   <Link to={"/about"}>About</Link>
                 </li>
@@ -55,7 +55,7 @@ const Header = () => {
           <div className="menu-right block">
             <ul className="flex flex-row items-center justify-end gap-4">
               <li className="flex gap-1 bg-gray-100 px-3.5 py-1.5">
-                <span>search</span> <CiSearch size="1.5em" />
+                <span className="text-xs">What are you looking for?</span><CiSearch size="1.5em" />
               </li>
               <li>
                 <span>
