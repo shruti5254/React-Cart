@@ -6,11 +6,14 @@ import Products from './pages/Products';
 import Contact from './pages/Contact';
 import MyOrders from './pages/MyOrders';
 import Cart from './pages/cart';
+
 import './App.css';
+
 import Header from './layouts/Header';
 import Footer from './layouts/Footer';
 import { useContext } from 'react';
 import {AppContext} from './context/AppContext';
+
 
 const App = () => {
   const { isSeller } = useContext(AppContext);

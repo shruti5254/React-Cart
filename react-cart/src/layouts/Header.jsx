@@ -22,44 +22,42 @@ const Header = () => {
           </p>
         </div>
       </div>
-      <nav className="w-full mx-auto header-menu shadow">
-        <div className="custom-container flex flex-row items-center justify-between w-full py-2">
-          <div className="menu-left block w-[60%]">
-            <div className="logo float-left">
-              <Link to={"/"} className="!no-underline w-10 h-10">
-                <span className="text-3xl font-bold color-accentbkp">
-                  Logo
-                </span>
+      <nav className="w-full mx-auto header-menu">
+        <div className="custom-container flex flex-row items-center gap-10 w-full py-4">
+          <div className="menu-left w-[28%]">
+            <div className="logo w-max">
+              <Link to={"/"} className="!no-underline w-full h-full">
+                <span className="text-3xl font-bold color-accentbkp px-2">Logo</span>
               </Link>
             </div>
-            <div className="hidden md:block nav-menu float-right">
-              <ul className="flex flex-row items-center justify-centre gap-2">
+          </div>
+          <div className="menu-center w-1/3">
+            <div className="hidden md:block nav-menu">
+              <ul className="flex flex-row items-center justify-center gap-2">
                 <li className="list-none px-3 py-2">
                   <Link className="no-underline" to={"/"}>
                     Home
                   </Link>
                 </li>
-                {/* <li className="list-none px-3 py-2">
-                  <Link to={"/products"}>Products</Link>
-                </li> */}
                 <li className="list-none px-3 py-2">
                   <Link to={"/about"}>About</Link>
                 </li>
                 <li className="list-none px-3 py-2">
                   <Link to={"/contact"}>Contact</Link>
                 </li>
-                {/* <li>Sign Up</li> */}
+               
               </ul>
             </div>
           </div>
-          <div className="menu-right block">
+          <div className="menu-right w-1/3">
             <ul className="flex flex-row items-center justify-end gap-4">
-              <li className="flex gap-1 bg-gray-100 px-3.5 py-1.5">
-                <span className="text-xs">What are you looking for?</span><CiSearch size="1.5em" />
+              <li className="flex items-center gap-2.5 border border-gray-300 rounded-full px-3.5 py-1.5">
+                <span className="text-sm">What are you looking for?</span>
+                <CiSearch className="font-medium" size="1.5em" />
               </li>
               <li>
                 <span>
-                  <CiHeart size="1.5em" />
+                  <CiHeart className="font-bold text-[2rem]" size="" />
                 </span>
               </li>
               <li
@@ -68,13 +66,13 @@ const Header = () => {
                 }}
               >
                 <span>
-                  <PiShoppingCartThin size="1.5em" />
+                  <PiShoppingCartThin className="font-bold text-[2rem]" size="" />
                 </span>
               </li>
               {user ? (
                 <>
                   <div className="relative group hidden md:block">
-                    <FaUserCircle size="1.5em" />
+                    <FaUserCircle className="font-bold text-[2rem]" size="" />
                     <ul className="hidden group-hover:block absolute top-8 right-0 bg-white shadow border border-gray-200 py-2 w-30 rounded-md z-40 text-sm">
                       <li
                         onClick={() => navigate("/my-orders")}
@@ -111,12 +109,16 @@ const Header = () => {
                 aria-label="Menu"
                 className="sm:hidden"
               >
-                <CgMenuRight size="1.5em" />
+                <CgMenuRight className="font-bold text-[2rem]" size="" />
               </button>
               {/* hamburger button ends*/}
 
               {/* mobile menu starts */}
-              <div className={`${open ? "block" : "hidden"} nav-menu absolute top-4 right-0 bg-white shadow-md p-4 md:hidden`}>
+              <div
+                className={`${
+                  open ? "block" : "hidden"
+                } nav-menu absolute top-4 right-0 bg-white shadow-md p-4 md:hidden`}
+              >
                 <ul className="flex flex-col items-center justify-centre gap-2">
                   <li className="list-none px-3 py-2">
                     <Link className="no-underline" to={"/"}>

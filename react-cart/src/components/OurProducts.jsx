@@ -20,8 +20,11 @@ const OurProducts = () =>{
                         <Cards title="wired Keyboard" image={Headphone} hoverActionLink="/cart" hoverText="add to cart" showHeart={true} showEye={true} priceNew="$500" priceOld="$1000"></Cards>
 
                         <Cards title="wired Keyboard" image={Headphone} hoverActionLink="/cart" hoverText="add to cart" showHeart={true} showEye={true} priceNew="$800" priceOld="$900"></Cards>
+
                         <Cards title="wired Keyboard" image={Headphone} hoverActionLink="/cart" hoverText="add to cart" showHeart={true} showEye={true} priceNew="$800" priceOld="$900"></Cards>
+
                         <Cards title="wired Keyboard" image={Headphone} hoverActionLink="/cart" hoverText="add to cart" showHeart={true} showEye={true} priceNew="$800" priceOld="$900"></Cards>
+                        
                         <Cards title="wired Keyboard" image={Headphone} hoverActionLink="/cart" hoverText="add to cart" showHeart={true} showEye={true} priceNew="$800" priceOld="$900"></Cards>
 
                     </div>

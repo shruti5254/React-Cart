@@ -40,6 +40,7 @@
 }
 .bg-customblack{
     background-color: var(--text);
+    /* background-color: #000000; */
 }
 .bg-customred{
     background-color: var(--color-accentbkp);

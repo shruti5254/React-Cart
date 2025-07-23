@@ -27,7 +27,7 @@ const Cards = ({
   };
   return (
     <div
-      className={`relative group overflow-hidden w-full cursor-pointer ${className}`}
+      className={`relative group overflow-hidden w-full cursor-pointer pt-2 ${className}`}
     >
         {image && (
             <div className="relative px-3 py-3 w-full rounded mb-1 bg-gray-200 bg-shadow-md overflow-hidden">
