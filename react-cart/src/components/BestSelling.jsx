@@ -9,7 +9,7 @@ const BestSelling = () => {
             <Titles titleSmall="This Month" titleLarge="Best Selling Products"/>  
         </div>
         <div className="products-wrapper mt-[30px] w-full mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4 mb-4 mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4 mb-4 mx-auto">
                 <Cards title="wired Keyboard" image={Headphone} hoverActionLink="/cart" hoverText="add to cart" showHeart={true} showEye={true} priceNew="$400" priceOld="$600"></Cards>
 
                 <Cards title="wired Keyboard" image={Headphone} hoverActionLink="/cart" hoverText="add to cart" showHeart={true} showEye={true} priceNew="$200" priceOld="$300"></Cards>

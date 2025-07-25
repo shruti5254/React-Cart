@@ -5,25 +5,27 @@ import { LiaArrowRightSolid } from "react-icons/lia";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 // import required modules
-import { Autoplay, Navigation } from "swiper/modules";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 const Hero = () => {
   return (
     <div className="w-screen bg-customblack py-8 mx-auto relative mb-[30px]">
       <Swiper
-        spaceBetween={30}
+        spaceBetween={15}
         centeredSlides={true}
         loop={true}
         autoplay={{
-          delay: 5000,
+          delay: 8000,
           disableOnInteraction: false,
         }}
-        navigation={true}
-        modules={[Autoplay, Navigation]}
+        navigation={false}
+        pagination={{clickable:true}}
+        modules={[Autoplay, Navigation, Pagination]}
         className="mySwiper custom-container mx-auto"
       >
-        <SwiperSlide className="px-8">
+        <SwiperSlide className="px-4">
           <div className="w-full h-max mx-auto py-8">
             <div className="flex flex-col md:flex-row gap-4 md:gap-14 items-center justify-between">
               <div className="w-full md:w-1/2 flex flex-col item-start justify-start py-4">
@@ -80,7 +82,7 @@ const Hero = () => {
               <div className="w-full md:w-1/2 flex flex-col item-start justify-start py-4">
                 <div className="text-white pb-4">
                   <h5 className="capitalize tracking-wider text-white mb-[10px]">
-                    50% off. Hurry Up
+                    Get On 50% off. Hurry Up
                   </h5>
                   <p className="text-white">
                     Discover the latest gadgets, smart devices & accessories.
