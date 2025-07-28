@@ -11,7 +11,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
 const Hero = () => {
   return (
-    <div className="w-screen bg-customblack py-8 mx-auto relative mb-[30px]">
+    <div className="custom-container bg-customblack  rounded w-full py-8 mx-auto relative mb-[30px] mt-[25px]">
       <Swiper
         spaceBetween={15}
         centeredSlides={true}
@@ -23,16 +23,16 @@ const Hero = () => {
         navigation={false}
         pagination={{clickable:true}}
         modules={[Autoplay, Navigation, Pagination]}
-        className="mySwiper custom-container mx-auto"
+        className="mySwiper mx-auto"
       >
-        <SwiperSlide className="px-4">
+        <SwiperSlide className="px-8">
           <div className="w-full h-max mx-auto py-8">
             <div className="flex flex-col md:flex-row gap-4 md:gap-14 items-center justify-between">
               <div className="w-full md:w-1/2 flex flex-col item-start justify-start py-4">
                 <div className="text-white pb-4">
-                  <h5 className="capitalize tracking-wider text-white mb-[10px]">
+                  <h4 className="capitalize tracking-wider text-white mb-[10px]">
                     50% off. Hurry Up
-                  </h5>
+                  </h4>
                   <p className="text-white">
                     Discover the latest gadgets, smart devices & accessories.
                   </p>
@@ -67,7 +67,8 @@ const Hero = () => {
                 /> */}
               </div>
 
-              <div className="w-full md:w-1/2 h-[350px] ml-auto rounded-full bg-radial from-zinc-500 from-15% to-[#111827] to-50%">
+              <div className="w-full md:w-1/2 h-[350px] ml-auto rounded-full  ">
+              {/* bg-radial from-zinc-500 from-15% to-[#111827] to-50% */}
                 <img
                   src={Heroimage}
                   className="w-full h-full object-contain aspect-auto "
@@ -81,9 +82,9 @@ const Hero = () => {
             <div className="flex flex-col md:flex-row gap-4 md:gap-14 items-center justify-between">
               <div className="w-full md:w-1/2 flex flex-col item-start justify-start py-4">
                 <div className="text-white pb-4">
-                  <h5 className="capitalize tracking-wider text-white mb-[10px]">
+                  <h4 className="capitalize tracking-wider text-white mb-[10px]">
                     Get On 50% off. Hurry Up
-                  </h5>
+                  </h4>
                   <p className="text-white">
                     Discover the latest gadgets, smart devices & accessories.
                   </p>
@@ -118,7 +119,8 @@ const Hero = () => {
                 /> */}
               </div>
 
-              <div className="w-full md:w-1/2 h-[350px] ml-auto rounded-full bg-radial from-zinc-500 from-15% to-[#111827] to-50%">
+              <div className="w-full md:w-1/2 h-[350px] ml-auto rounded-full ">
+              {/* bg-radial from-zinc-500 from-15% to-[#111827] to-50% */}
                 <img
                   src={Smart}
                   className="w-full h-full object-contain aspect-auto "

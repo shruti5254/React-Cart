@@ -11,9 +11,9 @@ const Header = () => {
   const { user, setUser, navigate, setShowUserLogin } = useContext(AppContext);
 
   return (
-    <header className="w-full mx-auto flex flex-col justify-center relative">
+    <header className="w-full mx-auto flex flex-col justify-center relative border-b border-gray-200">
       <div className="header-top w-full mx-auto text-center">
-        <div className="block bg-customblack shadow text-center w-full">
+        <div className="block bg-customblack shadow text-center w-full py-1.5">
           <p className="text-white text-sm font-normal capitalize p-1 text-center w-full">
             Summer sale for all items with free express delivary - off 50%.
             <a className="text-sm font-semibold underline" href="/">

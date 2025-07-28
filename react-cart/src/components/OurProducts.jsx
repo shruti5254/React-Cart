@@ -1,3 +1,4 @@
+
 import Cards from "./Cards";
 import MyButton from "../components/Buttons";
 import Headphone from "../assets/img-2.png";
@@ -5,7 +6,7 @@ import Titles from "./Titles";
 const OurProducts = () =>{
     return(
         <div>
-            <div className="custom-container mx-auto w-full mt-[30px] mb-[30px]">
+            <div className="custom-container mx-auto w-full mt-[40px] mb-[40px]">
                 <div className="section-title flex flex-col">
                     <Titles titleSmall="Our Products" titleLarge="Explore Our Products"/>  
                 </div>

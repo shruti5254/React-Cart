@@ -4,7 +4,7 @@ import Headphone from "../assets/img-2.png";
 import Titles from "./Titles";
 const FlashSale = () => {
   return (
-    <div className="custom-container mx-auto w-full mt-[30px] mb-[30px]">
+    <div className="custom-container mx-auto w-full mt-[40px] mb-[40px]">
         <div className="section-title flex flex-col">
             <div className="flex flex-row justify-between w-full lg:w-1/2">
                 <Titles titleSmall="Today's" titleLarge="Flash Sales"/>

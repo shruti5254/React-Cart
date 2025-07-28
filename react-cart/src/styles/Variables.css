@@ -1,13 +1,14 @@
 /* custom colors */
 :root{
     --color-primary: #2563eb;
-    --color-secondary: #F5F5F5;
+    --color-secondary: #F2F2F2;
     --color-primarybkp: #15803d;
     --color-accent: #facc15;
     --color-accentbkp: #DB4444;
     --background: #f9fafb;
-    --backgroundbkp: #F5F5F5;
+    --backgroundbkp: #F2F2F2;
     --text: #111827;
+    /* --text: #333333; */
     --textbkp: #14532d;
     --para: #184A48;
     --hover: #A0BCE0;

@@ -14,7 +14,7 @@ const StarRating = ({ initialRating, onRatingChange }) => {
   };
 
   return (
-    <div className="star-rating flex flex-row gap-1.5">
+    <div className="star-rating flex flex-row items-center gap-1.5">
       {[...Array(5)].map((_, index) => {
         index += 1;
         return (
@@ -30,6 +30,7 @@ const StarRating = ({ initialRating, onRatingChange }) => {
           </span>
         );
       })}
+      <span className="text-base text-[#7D8184] font-semibold ml-1">({rating})</span>
     </div>
   );
 };

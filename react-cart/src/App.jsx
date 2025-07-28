@@ -3,6 +3,7 @@ import {Routes, Route, useLocation} from 'react-router-dom';
 import Home from './pages/Home';
 import About from './pages/About';
 import Products from './pages/Products';
+import ProductDetails from './pages/ProductDetails';
 import Contact from './pages/Contact';
 import MyOrders from './pages/MyOrders';
 import Cart from './pages/cart';
@@ -13,6 +14,7 @@ import Header from './layouts/Header';
 import Footer from './layouts/Footer';
 import { useContext } from 'react';
 import {AppContext} from './context/AppContext';
+
 
 
 const App = () => {
@@ -28,6 +30,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/products" element={<Products />} />
+            <Route path="/products/details" element={<ProductDetails />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/my-orders" element={<MyOrders />} />
