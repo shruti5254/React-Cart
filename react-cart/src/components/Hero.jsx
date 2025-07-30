@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import Heroimage from "../assets/img-14.png";
 import Smart from "../assets/img-11.png";
+import GamepadRed from "../assets/gamepad-red.png";
 import { LiaArrowRightSolid } from "react-icons/lia";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -31,7 +32,7 @@ const Hero = () => {
               <div className="w-full md:w-1/2 flex flex-col item-start justify-start py-4">
                 <div className="text-white pb-4">
                   <h4 className="capitalize tracking-wider text-white mb-[10px]">
-                    50% off. Hurry Up
+                    Get on 50% off. Hurry Up
                   </h4>
                   <p className="text-white">
                     Discover the latest gadgets, smart devices & accessories.
@@ -122,7 +123,7 @@ const Hero = () => {
               <div className="w-full md:w-1/2 h-[350px] ml-auto rounded-full ">
               {/* bg-radial from-zinc-500 from-15% to-[#111827] to-50% */}
                 <img
-                  src={Smart}
+                  src={GamepadRed}
                   className="w-full h-full object-contain aspect-auto "
                 />
               </div>

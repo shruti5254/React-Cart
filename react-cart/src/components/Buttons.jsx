@@ -14,7 +14,7 @@ const MyButton = ({
     return(
         <button type={type}
         onClick={handleClick}
-        className={`px-6.5 py-4 w-max rounded text-white bg-customred hover:bg-customblack cursor-pointer ${className}`}
+        className={`px-10 py-3 w-max rounded text-white bg-[var(--color-accentbkp)] hover:bg-[var(--text)] cursor-pointer ${className}`}
         >{label}</button>
     )
 }

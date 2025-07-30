@@ -12,6 +12,7 @@ dist
 dist-ssr
 package-lock.json
 *.local
+README.md
 
 # Editor directories and files
 .vscode/*
