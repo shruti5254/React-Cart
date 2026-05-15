@@ -8,7 +8,9 @@ const AppContextProvider = ({children}) => {
   const [user, setUser] = useState (true);
   const [isSeller, setIsSeller] = useState (null);
   const [showUserLogin, setShowUserLogin] = useState (true);
-  // const [rating, setRating] = useState(0);
+  const [products, setProducts] = useState({});
+  const [cartItems, setCartItems] = useState([]);
+ 
   const value = {
     navigate,
     user,
@@ -17,8 +19,11 @@ const AppContextProvider = ({children}) => {
     setIsSeller,
     showUserLogin,
     setShowUserLogin,
-    /* rating,
-    setRating, */
+    products,
+    setProducts,
+    cartItems,
+    setCartItems,
+   
   };
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };
