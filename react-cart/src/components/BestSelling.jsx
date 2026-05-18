@@ -16,6 +16,7 @@ const BestSelling = () => {
                 {bestSellingProducts.map((product) => (
                     <Cards 
                         key={product.id}
+                        product={product}
                         title={product.title} 
                         image={product.image} 
                         hoverActionLink={product.hoverActionLink} 
