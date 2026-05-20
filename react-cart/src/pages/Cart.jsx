@@ -1,5 +1,3 @@
-
-
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
@@ -162,7 +160,7 @@ const Cart = () => {
 
               <button
                 className="w-full py-3 rounded text-white text-sm bg-[var(--color-accentbkp)] hover:opacity-90 transition-opacity cursor-pointer mt-2"
-                onClick={() => alert("Checkout coming soon!")}
+                onClick={() => navigate("/checkout")}
               >
                 Proceed to checkout
               </button>

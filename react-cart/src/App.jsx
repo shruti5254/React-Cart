@@ -9,9 +9,10 @@ import Cart from "./pages/Cart";
 import Wishlist from "./pages/Wishlist";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
+import Checkout from "./pages/Checkout";
+import MyAccount from "./pages/MyAccount";
 
 import "./App.css";
-
 import Header from "./layouts/Header";
 import Footer from "./layouts/Footer";
 import { useContext } from "react";
@@ -24,7 +25,6 @@ const App = () => {
   return (
     <>
       {isSellerPath ? null : <Header />}
-
       <div>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -33,13 +33,15 @@ const App = () => {
           <Route path="/products/details" element={<ProductDetails />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/my-orders" element={<MyOrders />} />
+          <Route path="/my-account" element={<MyAccount />} />
+          <Route path="/my-account/*" element={<MyAccount />} />
         </Routes>
       </div>
-
       <Footer />
     </>
   );

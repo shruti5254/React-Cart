@@ -92,6 +92,9 @@ const Header = () => {
                     <li className="px-3 py-1.5 font-medium text-gray-700 border-b border-gray-100 truncate">
                       {user.name}
                     </li>
+                    <li onClick={() => navigate("/my-account")} className="px-3 py-1.5 cursor-pointer hover:bg-gray-50">
+                      My Account
+                    </li>
                     <li onClick={() => navigate("/my-orders")} className="px-3 py-1.5 cursor-pointer hover:bg-gray-50">
                       My Orders
                     </li>
