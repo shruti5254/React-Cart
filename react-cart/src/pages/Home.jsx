@@ -1,4 +1,4 @@
-import Hero from "../components/hero";
+import HomeHeroLayout from "../components/HomeHeroLayout";
 import FlashSale from "../components/FlashSale";
 import Category from "../components/Category";
 import BestSelling from "../components/BestSelling";
@@ -9,7 +9,7 @@ import Services from "../components/Services";
 const Home = () => {
     return (
         <>
-          <Hero/>
+          <HomeHeroLayout/>
           <FlashSale/>
           <Category/>
           <BestSelling/>

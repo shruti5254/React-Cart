@@ -2,9 +2,14 @@ import Cards from "./Cards";
 import MyButton from "../components/Buttons";
 import Titles from "./Titles";
 import { getProductsByCategory } from "../data/productsData";
+import useCountdownTimer from "./useCountdownTimer";
 
 const FlashSale = () => {
   const flashSaleProducts = getProductsByCategory("flash-sale");
+  
+  // Set target date to 3 days from now
+  const targetDate = new Date(Date.now() + 3 * 24 * 60 * 60 * 1000).toISOString();
+  const { days, hours, minutes, seconds } = useCountdownTimer(targetDate);
 
   return (
     <div className="custom-container mx-auto w-full mt-[40px] mb-[40px]">
@@ -14,19 +19,19 @@ const FlashSale = () => {
                 <div className="timer flex flex-row gap-4">
                     <div className="flex flex-col items-center gap-2">
                         <span>Days</span>
-                        <h5>03</h5>
-                    </div>
-                    <div className="flex flex-col items-center gap-2">
-                        <span>Minutes</span>
-                        <h5>30</h5>
+                        <h5>{String(days).padStart(2, '0')}</h5>
                     </div>
                     <div className="flex flex-col items-center gap-2">
                         <span>Hours</span>
-                        <h5>10</h5>
+                        <h5>{String(hours).padStart(2, '0')}</h5>
+                    </div>
+                    <div className="flex flex-col items-center gap-2">
+                        <span>Minutes</span>
+                        <h5>{String(minutes).padStart(2, '0')}</h5>
                     </div>
                     <div className="flex flex-col items-center gap-2">
                         <span>Seconds</span>
-                        <h5>08</h5>
+                        <h5>{String(seconds).padStart(2, '0')}</h5>
                     </div>
                 </div>
             </div>
